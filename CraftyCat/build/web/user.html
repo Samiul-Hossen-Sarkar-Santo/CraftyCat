@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Crafty Cat</title>
+    <link rel="stylesheet" href="user.css" />
+    <!---we had linked our css file----->
+  </head>
+  <body>
+    <div class="full-page">
+      <div class="navbar">
+        <div>
+          <a href="index.html">Crafty Cat</a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li>
+              <button class="loginbtn" onclick="document.getElementById('login-form').style.display='block'" style="width: auto"> Buyer </button>
+            </li>
+
+            <li>
+              <button
+                class="loginbtn"
+                onclick="document.getElementById('login-form').style.display='block'"
+                style="width: auto"
+              >
+                Seller
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="login-form" class="login-page">
+        <div class="form-box">
+          <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" onclick="login()" class="toggle-btn">
+              Log In
+            </button>
+            <button type="button" onclick="register()" class="toggle-btn">
+              Register
+            </button>
+          </div>
+          <form id="login" class="input-group-login">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Username"
+              name ="name"
+              required
+            />
+            <input
+              type="password"
+              class="input-field"
+              placeholder="Enter Password"
+              name ="password"
+              required
+            />
+            <input type="checkbox" class="check-box" />
+            <span>Remember Password</span>
+            <input type="submit" class="submit-btn" value="Log in"/>
+          </form>
+          <form id="register" class="input-group-register">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Username"
+              name="username"
+              required
+            />
+            <input
+              type="email"
+              class="input-field"
+              placeholder="Email Id"
+              name="email"
+              required
+            />
+            <input
+                type="Password"
+                class="input-field"
+                placeholder="Enter Password"
+                name="password"
+                required
+            />
+            <input
+              type="text"
+              class="input-field"
+              placeholder="First Name"
+              name="firstName"
+              required
+            />
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Last Name"
+              name="lastName"
+              required
+            />
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Adress"
+              name="addressLine1"
+              required
+            />
+            <input
+              type="text"
+              class="input-field"
+              placeholder="City"
+              name="city"
+              required
+            />
+            <input
+              type="text"
+              class="input-field"
+              placeholder="State"
+              name="state"
+              required
+            />
+            <input
+              type="tel"
+              class="input-field"
+              placeholder="Phone"
+              name="phone"
+              required
+            />
+            
+            
+            <input type="checkbox" class="check-box" /><span
+              >I agree to the terms and conditions</span
+            >
+            <input type="submit" class="submit-btn" value="Register"/>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      var x = document.getElementById("login");
+      var y = document.getElementById("register");
+      var z = document.getElementById("btn");
+      function register() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+      }
+      function login() {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+      }
+    </script>
+    <script>
+      var modal = document.getElementById("login-form");
+      window.onclick = function (event) {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

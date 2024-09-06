@@ -1,0 +1,87 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li, form, table {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* Container styles */
+body {
+    background-color: #f4f4f4;
+}
+
+/* Section styles */
+section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+/* Form styles */
+form {
+    display: grid;
+    gap: 10px;
+    
+}
+
+label {
+    font-weight: bold;
+    text-align: left;
+}
+
+input,
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+button {
+    background-color: #e55472;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #434343;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #434343;
+    color: #fff;
+}
+
+rth {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: underline;
+}

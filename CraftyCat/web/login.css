@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+:root{
+    --bg-color: #fff;
+    --main-color: #e55472;
+    --text-color: #010101;
+    --2nd-color: #434343;
+    --other-color: #666666;
+    --nav--color: #fdebdf;
+    --full-bg: #efecec;
+    --big-font:5rem;
+    --h2-font:2.3rem;
+    --p-font:1.3rem;
+}
+
+body{
+    color: var(--text-color);
+    background: var(--full-bg);
+}
+
+.background{
+    background-color: var(--full-bg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.cont{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 550px;
+    margin-top: 20px;
+    background: url(BackgroundForLogin.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: gray;
+}
+.item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58%;
+    height: 100%;
+    color:darkslategray;
+    background: transparent;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.item .logo{
+    color:darkslategray;
+    font-size: 50px;
+}
+.logo span{
+    font-size: 40px;
+}
+.text-item h2{
+    font-size: 40px;
+    line-height: 1;
+}
+.text-item p{
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.cont .login-section{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 42%;
+    height: 100%;
+    color: var(--text-color);
+}
+.login-section .form-box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.login-section .form-box h2{
+    text-align: center;
+    font-size: 25px;
+}
+.form-box .input-box{
+    width: 340px;
+    height: 58px;
+    border-bottom: 2px solid darkslategray;
+    margin: 30px 0;
+    position: relative;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-right: 28px;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 600px;
+    pointer-events: none;
+    transition: .5s ease;
+}
+.input-box .icon{
+    position: absolute;
+    top: 13px;
+    right: 0;
+    font-size: 19px;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+
+.Login{
+   
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color: darkslategray;
+    box-shadow: rgba(0, 0, 0, 0.4);
+}
+.create-account{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 25px;
+}
+.create-account p a{
+    color: darkslategray;
+    font-weight: 600px;
+    text-decoration: none;
+}
+.create-account p a:hover{
+    text-decoration: underline;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    background-color: #434343;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #666666;
+}

@@ -1,0 +1,57 @@
+-- Users Table
+CREATE TABLE Users (
+    UserID INT AUTO_INCREMENT PRIMARY KEY,
+    Username VARCHAR(50) NOT NULL,
+    Email VARCHAR(255) NOT NULL,
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    AddressLine1 VARCHAR(255) NOT NULL,
+    City VARCHAR(50) NOT NULL,
+    State VARCHAR(50) NOT NULL,
+    Phone VARCHAR(20) NOT NULL,
+    RegistrationDate TIMESTAMP NOT NULL,
+    HashedPassword VARCHAR(255) NOT NULL,
+    Salt VARCHAR(255) NOT NULL,
+    UserRole VARCHAR(10) NOT NULL
+);
+
+
+-- Products Table
+CREATE TABLE Products (
+    ProductID INT AUTO_INCREMENT PRIMARY KEY,
+    Name VARCHAR(100) NOT NULL,
+    Description TEXT,
+    Price DECIMAL(10, 2) NOT NULL,
+    StockQuantity INT NOT NULL,
+    CategoryID INT NOT NULL,
+    SellerID INT NOT NULL,
+    FOREIGN KEY (CategoryID) REFERENCES Categories(CategoryID),
+    FOREIGN KEY (SellerID) REFERENCES Sellers(SellerID)
+);
+
+
+-- Categories Table
+CREATE TABLE Categories (
+    CategoryID INT AUTO_INCREMENT PRIMARY KEY,
+    CategoryName VARCHAR(50),
+    Description TEXT
+);
+
+-- Sellers Table
+CREATE TABLE Sellers (
+    SellerID INT AUTO_INCREMENT PRIMARY KEY,
+    UserID INT,
+    ShopName VARCHAR(255) NOT NULL,
+    FOREIGN KEY (UserID) REFERENCES Users(UserID)
+);
+
+-- Cart Table
+CREATE TABLE Cart (
+    CartID INT AUTO_INCREMENT PRIMARY KEY,
+    UserID INT,
+    ProductID INT,
+    Quantity INT,
+    FOREIGN KEY (UserID) REFERENCES Users(UserID),
+    FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
+);
+
