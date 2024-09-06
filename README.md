@@ -95,10 +95,9 @@ Crafty Cat integrates several technologies to deliver a complete e-commerce solu
 - **User Experience**: Enhanced understanding of user interface design and usability.
 - **Project Management**: Improved skills in managing projects and collaborating with a team.
 
-## Contributions
+## Contributors
 
-Contributions are welcome! Feel free to fork the repository, create a new branch, and submit a pull request.
+- **Samiul Hossen Sarkar Santo** - Project Lead
+- **Mridula Mozid** - Developer
+- **Nishat Tasneem** - Developer
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
